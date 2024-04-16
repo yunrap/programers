@@ -1,21 +1,38 @@
 public class CubeGame2 {
     public int solution(int a, int b, int c) {
-        int answer = 0;
 
         if (a != b && b != c && a != c) {
-            answer = a + b + c;
-        } else if (a == b && b != c) {
-            answer = (a + b + c) * (a * a + b * b + c * c);
-        } else if (b == c && a != b) {
-            answer = (a + b + c) * (a * a + b * b + c * c);
-        } else if (a == c && b != c) {
-            answer = (a + b + c) * (a * a + b * b + c * c);
-        } else if (a == b && b == c) {
-            answer = (a + b + c) * (a * a + b * b + c * c) * (a * a * a + b * b * b + c * c * c);
+            return a + b + c;
         }
 
-        return answer;
+        if (isTwoNumberEquals(a, b, c)) {
+            return calculateEqualsTwoNumber(a, b, c);
+        }
+
+        if (isThreeNumberEquals(a, b, c)) {
+            return calculateEqualsThreeNumber(a, b, c);
+        }
+
+        return a + b + c;
     }
+
+    private boolean isTwoNumberEquals(int a, int b, int c) {
+        return (a == b) || (a == c) || (b == c);
+    }
+
+    private boolean isThreeNumberEquals(int a, int b, int c) {
+        return a == b && b == c;
+    }
+
+    private int calculateEqualsTwoNumber(int a, int b, int c) {
+        return (a + b + c) * (a * a + b * b + c * c);
+    }
+
+    private int calculateEqualsThreeNumber(int a, int b, int c) {
+        return (a + b + c) * (a * a + b * b + c * c) * ((int) Math.pow(a, 3) + (int) Math.pow(b, 3) + (int) Math.pow(c, 3));
+    }
+
+
 }
 
 // 세숫자가 모두다르면 a+b+c 점을 얻는다
@@ -23,3 +40,5 @@ public class CubeGame2 {
 // 세숫자가 모두같다면 (a+b+c)*(a*a + b*b + c*c)*(a*a*a + b*b*b + c*c*c)
 
 // 최대값을 하나로 기준을 잡는다.
+
+// 리팩토링> 함수화서 공통된코드사용하기, else문사용하지말것되도록
