@@ -17,7 +17,7 @@ public class CubeGame1 {
     }
 }
 
-
+// https://school.programmers.co.kr/learn/courses/30/lessons/181839
 // a와 b가 홀수라면 a2 + b2 결과를 담는다   a /2 != 0 && b / 2 != 0
 // a와 b중 하나만 홀수라면 2 x (a + b) 결과를 담는다
 // a와 b 모두 홀수가 아니라면 | a - b | 점을 얻는다.

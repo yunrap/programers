@@ -12,6 +12,7 @@ public class QrCode {
     }
 }
 
+// https://school.programmers.co.kr/learn/courses/30/lessons/181903
 // String인덱스 % q == 1 이면 result에 담는다
 // String을 문자개수만큼 반복문을 돌린다
 

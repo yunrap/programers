@@ -60,6 +60,7 @@ public class CubeGame3 {
     }
 }
 
+// https://school.programmers.co.kr/learn/courses/30/lessons/181916
 // 네숫자가 모두 p로 같다면 1111 * p -> 1가지
 // 세숫자가 모두 p이고 나머지숫자가 q면 (10*p+q) * (10*p+q)  -> 4가지
 // 두숫자씩 같은값이고 나온숫자가 p,q라면 (p+q) * |p-q| -> 3가지

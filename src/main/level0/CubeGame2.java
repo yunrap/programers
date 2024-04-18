@@ -35,6 +35,7 @@ public class CubeGame2 {
 
 }
 
+// https://school.programmers.co.kr/learn/courses/30/lessons/181930
 // 세숫자가 모두다르면 a+b+c 점을 얻는다
 // 두숫자가같고 한숫는다르다면 (a+b+c) x (a*a + b*b + c*c)
 // 세숫자가 모두같다면 (a+b+c)*(a*a + b*b + c*c)*(a*a*a + b*b*b + c*c*c)
