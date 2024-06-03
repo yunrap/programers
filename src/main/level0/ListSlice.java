@@ -40,3 +40,4 @@ public class ListSlice {
 // :: 리스트자르기
 //https://school.programmers.co.kr/learn/courses/30/lessons/181897
 // 숫자에따른 인덱스자르기 규칙이있다면 case로 경우를 나눠보자
+// 다른사람의풀이 : 다항연산자로 한다면 더깔끔하게 되군
